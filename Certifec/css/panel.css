@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .sidebar {
+    width: 250px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #ffffff; /* rojo institucional, puedes cambiarlo si deseas */
+  }
+  
+  
+  .sidebar .nav-link {
+    color: #0c0606;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active {
+    background-color: #25394d;
+    color: white;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* lo hace circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra sutil */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .content {
+    margin-left: 250px;
+    padding-bottom: 50px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .encabezado {
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    object-fit: cover
+  }
+  
+  .encabezado-img {
+    width: 100%;
+    max-height: 250px; /* limita la altura máxima */
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Ocultar el menú lateral en móviles, mostrar botón */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+  }
+
+  .content {
+    margin-top: 250px; /* espacio para que el contenido no se solape con el menú */
+  }
+
+  .encabezado-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 769px) {
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+  }
+
+  .content {
+    margin-left: 250px;
+  }
+}

@@ -1,0 +1,36 @@
+body {
+  background-image: url('../img/.jpg'); /* Usa una imagen de fondo completa */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.logo-borde {
+  height: 50px;
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 2px;
+  background-color: white;
+}
+
+.navbar {
+  background-color: #0055b6 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.presentacion {
+  background-color: rgba(185, 129, 129, 0.6);
+  border-radius: 15px;
+  max-width: 900px;
+  margin: auto;
+  color: white;
+}
+
+footer {
+  font-size: 0.9rem;
+  background-color: #001f3f;
+}

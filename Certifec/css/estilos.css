@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: none;
+  overflow: hidden;
+}
+
+/* Fondo general */
+.background {
+  background: url("../img/foto.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 32, 96, 0.5); /* Azul oscuro transparente */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px; /* pegado al info-box */
+}
+
+/* Formulario */
+.login-box {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #0e213f;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b7e83;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #0d47a1;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #b71c1c;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #0d47a1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Caja derecha más integrada al formulario */
+.info-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  width: 440px;
+  height: 390px;
+  margin-left: -10px;
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Texto inferior */
+.info-footer {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+}
